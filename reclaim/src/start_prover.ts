@@ -1,9 +1,9 @@
 import { providers } from '@reclaimprotocol/attestor-core/lib/providers'
-import { TLSProtocolVersion } from '@reclaimprotocol/tls/lib/types'
+import { TLSProtocolVersion } from '@reclaimprotocol/tls';
 
-const parseCertificate = require('@reclaimprotocol/tls/lib/utils/parse-certificate');
-const mockVerifyCertificateChain = (): void => { };
-parseCertificate.verifyCertificateChain = mockVerifyCertificateChain
+// const parseCertificate = require('@reclaimprotocol/tls/lib/utils/parse-certificate');
+// const mockVerifyCertificateChain = (): void => { };
+// parseCertificate.verifyCertificateChain = mockVerifyCertificateChain
 
 import { createClaimOnAttestor } from '@reclaimprotocol/attestor-core/lib/client'
 import { ZKEngine } from '@reclaimprotocol/zk-symmetric-crypto'
